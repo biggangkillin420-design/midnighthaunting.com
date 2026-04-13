@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAUNTEDMIDNIGHTSTORE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        .font-spooky {
+            font-family: 'Creepster', cursive;
+        }
+        .membership-card {
+            transition: transform 0.2s ease-in-out;
+        }
+        .membership-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen flex flex-col">
+    <header class="bg-gray-800 shadow-lg py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-4xl font-bold text-red-600 font-spooky tracking-wider">
+                HAUNTEDMIDNIGHTSTORE
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-300 hover:text-red-500 text-lg">Home</a></li>
+                    <li><a href="#memberships" class="text-gray-300 hover:text-red-500 text-lg">Memberships</a></li>
+                    <li><a href="#content" class="text-gray-300 hover:text-red-500 text-lg">Content</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="home" class="py-20 text-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1518655255019-d04b0451a942?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="bg-black bg-opacity-70 py-16 px-8 max-w-3xl mx-auto rounded-lg shadow-xl">
+                <h2 class="text-6xl font-bold text-red-500 font-spooky mb-6 leading-tight">Uncover the Veil of Midnight Hauntings</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Dive deep into the paranormal with exclusive content, chilling investigations, and behind-the-scenes access. Your journey into the unknown begins here.
+                </p>
+                <a href="#memberships" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-xl transition duration-300 ease-in-out shadow-lg">
+                    Choose Your Membership
+                </a>
+            </div>
+        </section>
+
+        <section id="memberships" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-5xl font-bold text-red-500 font-spooky mb-12">Unlock Exclusive Access</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Gold Membership -->
+                    <div class="membership-card bg-gray-800 border border-red-700 rounded-lg p-8 shadow-xl flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-4xl font-bold text-yellow-400 font-spooky mb-4">Gold Tier</h3>
+                            <p class="text-5xl font-extrabold text-white mb-6">$12<span class="text-xl font-normal">/month</span></p>
+                            <ul class="text-gray-300 text-left space-y-3 mb-8">
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> All Content Access</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> Exclusive Live Streams</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> Early Access to Videos</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> Monthly Q&A Sessions</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> Digital Merch Pack</li>
+                            </ul>
+                        </div>
+                        <button data-membership="gold" class="select-membership-btn bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75">
+                            Select Gold
+                        </button>
+                    </div>
+
+                    <!-- Silver Membership -->
+                    <div class="membership-card bg-gray-800 border border-red-700 rounded-lg p-8 shadow-xl flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-4xl font-bold text-gray-400 font-spooky mb-4">Silver Tier</h3>
+                            <p class="text-5xl font-extrabold text-white mb-6">$10<span class="text-xl font-normal">/month</span></p>
+                            <ul class="text-gray-300 text-left space-y-3 mb-8">
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> All Content Access</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> Early Access to Videos</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> Monthly Q&A Sessions</li>
+                            </ul>
+                        </div>
+                        <button data-membership="silver" class="select-membership-btn bg-gray-500 hover:bg-gray-600 text-gray-900 font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out shadow-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75">
+                            Select Silver
+                        </button>
+                    </div>
+
+                    <!-- Bronze Membership -->
+                    <div class="membership-card bg-gray-800 border border-red-700 rounded-lg p-8 shadow-xl flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-4xl font-bold text-amber-600 font-spooky mb-4">Bronze Tier</h3>
+                            <p class="text-5xl font-extrabold text-white mb-6">$4<span class="text-xl font-normal">/month</span></p>
+                            <ul class="text-gray-300 text-left space-y-3 mb-8">
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> Limited Content Access</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">&#10003;</span> Select Video Library</li>
+                            </ul>
+                        </div>
+                        <button data-membership="bronze" class="select-membership-btn bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out shadow-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-opacity-75">
+                            Select Bronze
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-5xl font-bold text-red-500 font-spooky mb-12">Your Exclusive Content</h2>
+                <div id="content-display" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div id="no-membership-message" class="col-span-full text-center text-gray-400 text-2xl p-10 border border-gray-700 rounded-lg bg-gray-900">
+                        Please select a membership tier above to view content.
+                    </div>
+
+                    <!-- General Content (All Memberships) -->
+                    <div class="content-item bg-gray-700 rounded-lg shadow-lg p-6 text-left">
+                        <h3 class="text-2xl font-bold text-red-400 mb-3">The Whispering Manor Investigation</h3>
+                        <p class="text-gray-300 mb-4">Join us as we explore the chilling secrets of an abandoned mansion, rumored to be haunted by its former residents.</p>
+                        <a href="#" class="text-red-500 hover:text-red-400 font-semibold">Watch Now</a>
+                    </div>
+
+                    <div class="content-item bg-gray-700 rounded-lg shadow-lg p-6 text-left">
+                        <h3 class="text-2xl font-bold text-red-400 mb-3">Cryptic Forest Expedition</h3>
+                        <p class="text-gray-300 mb-4">Our team ventures into a forest where strange disappearances and eerie sounds have been reported for decades.</p>
+                        <a href="#" class="text-red-500 hover:text-red-400 font-semibold">Watch Now</a>
+                    </div>
+
+                    <!-- Silver/Gold Exclusive Content -->
+                    <div class="content-item bg-gray-700 rounded-lg shadow-lg p-6 text-left" data-access="silver-gold">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-3">Behind the Scenes: Ghost Hunting Gear</h3>
+                        <p class="text-gray-300 mb-4">A deep dive into the advanced equipment we use, how it works, and our favorite tools for paranormal detection.</p>
+                        <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Exclusive</a>
+                    </div>
+
+                    <div class="content-item bg-gray-700 rounded-lg shadow-lg p-6 text-left" data-access="silver-gold">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-3">Extended Cut: Asylum of Shadows</h3>
+                        <p class="text-gray-300 mb-4">An unedited, extended version of our most terrifying investigation yet, with never-before-seen footage.</p>
+                        <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">Watch Extended</a>
+                    </div>
+
+                    <!-- Gold Exclusive Content -->
+                    <div class="content-item bg-gray-700 rounded-lg shadow-lg p-6 text-left" data-access="gold">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-3">Live Q&A with the Team (Gold Only)</h3>
+                        <p class="text-gray-300 mb-4">Join us for a private, interactive Q&A session where we answer your burning questions about our experiences.</p>
+                        <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">Join Live</a>
+                    </div>
+
+                    <div class="content-item bg-gray-700 rounded-lg shadow-lg p-6 text-left" data-access="gold">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-3">Digital Merch Pack: Vol. 1 (Gold Only)</h3>
+                        <p class="text-gray-300 mb-4">Download exclusive wallpapers, ringtones, and digital art inspired by our most haunted locations.</p>
+                        <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">Download Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-8 text-center text-gray-400">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2023 HAUNTEDMIDNIGHTSTORE. All rights reserved. Powered by <a href="https://midnighthauntings.com" class="text-red-500 hover:underline">midnighthauntings.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        let currentMembership = null; // Can be 'gold', 'silver', 'bronze', or null
+
+        const selectMembershipButtons = document.querySelectorAll('.select-membership-btn');
+        const contentItems = document.querySelectorAll('.content-item');
+        const noMembershipMessage = document.getElementById('no-membership-message');
+
+        function updateContentDisplay() {
+            if (!currentMembership) {
+                noMembershipMessage.classList.remove('hidden');
+                contentItems.forEach(item => item.classList.add('hidden'));
+                return;
+            }
+
+            noMembershipMessage.classList.add('hidden');
+
+            contentItems.forEach(item => {
+                const accessLevel = item.dataset.access; // e.g., "gold", "silver-gold"
+
+                if (!accessLevel) {
+                    // Content without data-access is visible to all members
+                    item.classList.remove('hidden');
+                } else if (currentMembership === 'gold') {
+                    // Gold sees everything
+                    item.classList.remove('hidden');
+                } else if (currentMembership === 'silver') {
+                    // Silver sees general and silver-gold exclusive content
+                    if (accessLevel.includes('silver-gold')) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden'); // Hides gold-only content
+                    }
+                } else if (currentMembership === 'bronze') {
+                    // Bronze only sees general content (items without data-access)
+                    item.classList.add('hidden'); // Hides all content with data-access
+                }
+            });
+        }
+
+        selectMembershipButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                currentMembership = button.dataset.membership;
+                alert(`You have selected the ${currentMembership.toUpperCase()} membership! (This is a simulation. No actual payment or account created.)`);
+                updateContentDisplay();
+                // Scroll to content section
+                document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Initial content display (no membership selected)
+        updateContentDisplay();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

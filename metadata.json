@@ -1,0 +1,12 @@
+{
+  "name": "HAUNTEDMIDNIGHTSTORE",
+  "description": "A simulated membership website for paranormal content, featuring Gold, Silver, and Bronze tiers with varying content access, styled with Tailwind CSS.",
+  "entry": "index.html",
+  "multiPage": false,
+  "files": [
+    "index.html",
+    "metadata.json"
+  ],
+  "tailwind": { "source": "play-cdn" },
+  "generatedAt": "2023-11-19T12:00:00Z"
+}
